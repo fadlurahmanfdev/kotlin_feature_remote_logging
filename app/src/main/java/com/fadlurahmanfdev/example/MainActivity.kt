@@ -5,12 +5,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.fadlurahmanfdev.remote_logging.service.BetterstackServiceImpl
+import com.fadlurahmanfdev.remote_logging.service.BetterstackLoggingServiceImpl
 import com.fadlurahmanfdev.remote_logging.service.GoogleCloudLoggingServiceImpl
 import java.util.logging.Level
 
 class MainActivity : AppCompatActivity() {
-    lateinit var betterstackImpl: BetterstackServiceImpl
+    lateinit var betterstackImpl: BetterstackLoggingServiceImpl
     lateinit var googleCloudLoggingServiceImpl: GoogleCloudLoggingServiceImpl
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        betterstackImpl = BetterstackServiceImpl(sourceToken = BuildConfig.BETTERSTACK_SOURCE_TOKEN)
+        betterstackImpl = BetterstackLoggingServiceImpl(sourceToken = BuildConfig.BETTERSTACK_SOURCE_TOKEN)
 
         googleCloudLoggingServiceImpl = GoogleCloudLoggingServiceImpl(
             serviceAccount = resources.openRawResource(R.raw.example_learn_purpose_4dd93f634791),

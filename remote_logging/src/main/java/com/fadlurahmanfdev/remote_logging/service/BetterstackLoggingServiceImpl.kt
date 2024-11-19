@@ -13,7 +13,7 @@ import java.io.IOException
 import java.util.logging.Level
 
 
-class BetterstackServiceImpl(
+class BetterstackLoggingServiceImpl(
     private val sourceToken: String
 ): RemoteLoggingService() {
     private lateinit var client: OkHttpClient
@@ -68,13 +68,13 @@ class BetterstackServiceImpl(
         client.newCall(request).enqueue(object : Callback {
             override fun onFailure(call: Call, e: IOException) {
                 Log.e(
-                    this@BetterstackServiceImpl::class.java.simpleName,
+                    this@BetterstackLoggingServiceImpl::class.java.simpleName,
                     "failed to send remote log: ${e.message}"
                 )
             }
 
             override fun onResponse(call: Call, response: Response) {
-                Log.d(this@BetterstackServiceImpl::class.java.simpleName, "betterstack success send remote log")
+                Log.d(this@BetterstackLoggingServiceImpl::class.java.simpleName, "betterstack success send remote log")
             }
 
         })
