@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    namespace = "com.fadlurahmanfdev.remote_logging"
+    namespace = "com.fadlurahmanfdev.remote_logging_v2"
     compileSdk = 34
 
     defaultConfig {
@@ -67,7 +67,7 @@ mavenPublishing {
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
     signAllPublications()
 
-    coordinates("com.fadlurahmanfdev", "kotlin_feature_remote_logging", "0.0.2-beta")
+    coordinates("com.fadlurahmanfdev", "remote_logging_v2", "0.0.1-beta")
 
     pom {
         name.set("Kotlin Library Feature Remote Logging")

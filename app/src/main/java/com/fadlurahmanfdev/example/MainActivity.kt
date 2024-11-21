@@ -5,8 +5,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.fadlurahmanfdev.remote_logging.service.BetterstackLoggingServiceImpl
-import com.fadlurahmanfdev.remote_logging.service.GoogleCloudLoggingServiceImpl
+import com.fadlurahmanfdev.remote_logging_v2.service.BetterstackLoggingServiceImpl
+import com.fadlurahmanfdev.remote_logging_v2.service.GoogleCloudLoggingServiceImpl
 import java.util.logging.Level
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.fadlurahmanfdev.remote_logging.service
+package com.fadlurahmanfdev.remote_logging_v2.service
 
 import android.util.Log
 import okhttp3.Call

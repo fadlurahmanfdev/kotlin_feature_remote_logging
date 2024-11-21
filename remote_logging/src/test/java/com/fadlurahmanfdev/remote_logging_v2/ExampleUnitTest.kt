@@ -1,4 +1,4 @@
-package com.fadlurahmanfdev.remote_logging
+package com.fadlurahmanfdev.remote_logging_v2
 
 import org.junit.Test
 
