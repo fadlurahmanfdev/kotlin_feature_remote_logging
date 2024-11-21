@@ -1,4 +1,4 @@
-package com.fadlurahmanfdev.remote_logging_v2.service
+package com.fadlurahmanfdev.remote_logging.service
 
 import android.util.Log
 import com.google.auth.oauth2.ServiceAccountCredentials

@@ -1,4 +1,4 @@
-package com.fadlurahmanfdev.remote_logging_v2.logger
+package com.fadlurahmanfdev.remote_logging.logger
 
 import android.util.Log
 import java.util.logging.Level

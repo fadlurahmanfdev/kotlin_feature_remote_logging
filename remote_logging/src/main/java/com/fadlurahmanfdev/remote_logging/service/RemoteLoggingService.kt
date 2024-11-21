@@ -1,4 +1,4 @@
-package com.fadlurahmanfdev.remote_logging_v2.service
+package com.fadlurahmanfdev.remote_logging.service
 
 import org.json.JSONObject
 import java.util.logging.Level
