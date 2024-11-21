@@ -67,7 +67,7 @@ mavenPublishing {
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
     signAllPublications()
 
-    coordinates("com.fadlurahmanfdev", "kotlin_feature_remote_logging", "0.0.1-beta")
+    coordinates("com.fadlurahmanfdev", "kotlin_feature_remote_logging", "0.0.2-beta")
 
     pom {
         name.set("Kotlin Library Feature Remote Logging")
