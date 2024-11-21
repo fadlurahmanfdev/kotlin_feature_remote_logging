@@ -34,6 +34,6 @@ class MainActivity : AppCompatActivity() {
         betterstackImpl.init()
 
         googleCloudLoggingServiceImpl.log(Level.INFO, message = "fadlurahmanfdev start app kotlin")
-//        betterstackImpl.log(Level.INFO, message = "fadlurahmanfdev start app kotlin")
+        betterstackImpl.log(Level.INFO, message = "fadlurahmanfdev start app kotlin")
     }
 }
